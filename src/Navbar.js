@@ -47,7 +47,7 @@ const Navbar = () => {
                         onClose={handleClose} >
                             <a  className={classes.anchorBold} href="/home"><MenuItem style={{ fontWeight:"bold" }} onClick={handleClose} >Főoldal</MenuItem></a>
                         {content.menuItems.map((item, index) => (
-                            <a className={classes.anchor} href={item.href}><MenuItem onClick={handleClose} >{item.desc}</MenuItem></a>
+                            <a className={classes.anchor} key={index} href={item.href}><MenuItem onClick={handleClose} >{item.desc}</MenuItem></a>
                         ))}
                     </Menu>
                 </Toolbar>
