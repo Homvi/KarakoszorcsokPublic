@@ -11,6 +11,15 @@ const useStyles = makeStyles((theme) => ({
     title: {
       flexGrow: 1,
     },
+    anchor:{
+      textDecoration:"none", 
+      color:"black",
+    },
+    anchorBold:{
+      fontWeight:"bolder",
+      textDecoration:"none", 
+      color:"black",
+    }
   }));
 
   export default useStyles;
