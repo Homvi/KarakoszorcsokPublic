@@ -11,7 +11,6 @@ const Gallery = () => {
     return (
         <>
         <FirstGallery/>
-        <FirstGallery/>
         </>
     )
 }

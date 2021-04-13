@@ -42,7 +42,7 @@ const NewsCard = ({ data }) => {
           {data.date}
         </Button>
         <Button size="small" color="primary">
-       {data.outerSource && <a href={data.outerSource}>tovább(külső hivatkozás)...</a>}   
+       {data.outerSource && <a target="_blank" rel="noopener noreferrer" target="_blank" href={data.outerSource}>tovább(külső hivatkozás)...</a>}   
         </Button>
       </CardActions>
     </Card>
