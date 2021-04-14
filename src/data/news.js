@@ -8,9 +8,9 @@ export const news = [
   {
     id: 2,
     title:
-    "Április 11-e a A magyar költészet napja, melyet  Magyarországon 1964 óta ezen a napon, József Attila születésnapján ünnepelnek.",
+      "Április 11-e a A magyar költészet napja, melyet  Magyarországon 1964 óta ezen a napon, József Attila születésnapján ünnepelnek.",
     description:
-    "Kilencedik alkalommal rendezték meg a Petőfi Irodalmi Múzeumban (PIM) a Versmaratont, amelyen kortárs költők szavalják verseiket tizenkét órán át. A Versmaraton célja a kezdetektől az, hogy közelebb vigye az olvasókhoz a kortárs költészetet. Ennek érdekében Az év versei 2019 antológia mintegy száz szerzője adja elő költeményeit a PIM épületében, de a kezdeményezéshez számos kísérőrendezvény és pályázat is kapcsolódik.",
+      "Kilencedik alkalommal rendezték meg a Petőfi Irodalmi Múzeumban (PIM) a Versmaratont, amelyen kortárs költők szavalják verseiket tizenkét órán át. A Versmaraton célja a kezdetektől az, hogy közelebb vigye az olvasókhoz a kortárs költészetet. Ennek érdekében Az év versei 2019 antológia mintegy száz szerzője adja elő költeményeit a PIM épületében, de a kezdeményezéshez számos kísérőrendezvény és pályázat is kapcsolódik.",
     date: "2021-04-11",
     src: jozsefAttila,
     type: "default",
@@ -20,9 +20,9 @@ export const news = [
   {
     id: 3,
     title:
-    "Az Eötvös Károly Megyei Könyvtár támogatásával húsvéti ajtódíszeket készíthettek az aktív könyvtári tagok.",
+      "Az Eötvös Károly Megyei Könyvtár támogatásával húsvéti ajtódíszeket készíthettek az aktív könyvtári tagok.",
     description:
-    " A vírushelyzet szabályainak betartásával természetesen mindenki a saját otthonában készítette el alkotását. Köszönjük a képeket!",
+      " A vírushelyzet szabályainak betartásával természetesen mindenki a saját otthonában készítette el alkotását. Köszönjük a képeket!",
     date: "2021-04-06",
     src: koszoru,
     type: "default",
@@ -39,7 +39,7 @@ export const news = [
     category: "politics",
     mediaType: "img",
     outerSource:
-    "https://www.facebook.com/kovacszoltan.fidesz/videos/1281416218892171",
+      "https://www.facebook.com/kovacszoltan.fidesz/videos/1281416218892171",
   },
   {
     id: 1,
