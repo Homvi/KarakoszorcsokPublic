@@ -9,9 +9,9 @@ import FirstGallery from '../components/FirstGallery';
 
 const Gallery = () => {
     return (
-        <>
+        <div style={{minHeight:"calc(100vh - 70px)"}}>
         <FirstGallery/>
-        </>
+        </div>
     )
 }
 

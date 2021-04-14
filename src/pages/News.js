@@ -21,7 +21,7 @@ const News = () => {
   const classes = useStyles();
   console.log(news);
   return (
-    <>
+    <div style={{minHeight:"calc(100vh - 70px)", marginBottom:"30px"}}>
       <Typography variant="h2" align="center">
         Hírek, aktualitások
       </Typography>
@@ -36,7 +36,7 @@ const News = () => {
           <Grid item xs={false} sm={2} />
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 };
 

@@ -6,25 +6,25 @@ const content = {
   },
   menuItems: [
     {
-      desc: "Falutörténet",
-      href: "history",
-    },
-    {
-      desc: "Dokumentumtár",
-      href:
-        "https://www.tuskevarikozoshivatal.hu/?module=news&fname=dok-karakoszorcsok",
+      desc: "Hírek, aktualitások",
+      href: "news",
     },
     {
       desc: "Galéria",
       href: "gallery",
     },
     {
-      desc: "Hírek, aktualitások",
-      href: "news",
+      desc: "Falutörténet",
+      href: "history",
     },
     {
       desc: "Kapcsolat",
       href: "contact",
+    },
+    {
+      desc: "Dokumentumtár",
+      href:
+        "https://www.tuskevarikozoshivatal.hu/?module=news&fname=dok-karakoszorcsok",
     },
   ],
 };

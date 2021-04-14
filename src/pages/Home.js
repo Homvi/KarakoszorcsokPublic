@@ -1,9 +1,10 @@
 import React from "react";
-import MyCarousel from "../components/MyCarousel";
+
+
 
 const Home = () => {
-  return <div>
-      {/* <MyCarousel/> */}
+  return <div style={{minHeight:"calc(100vh - 70px)"}} className="content">
+      
   </div>;
 };
 
