@@ -7,10 +7,12 @@ import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import News from "./pages/News"
 import History from "./pages/History"
-import Gallery from "./pages/Gallery"
+import Gallery from "./pages/Gallery";
+import Footer from "./components/Footer"
+
+
 function App() {
   const classes = useStyles();
-
   return (
     <>
       <Navbar />
@@ -34,6 +36,7 @@ function App() {
           <Contact />
         </Route>
       </Switch>
+      <Footer/>
     </>
   );
 }

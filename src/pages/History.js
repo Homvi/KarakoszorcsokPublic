@@ -6,7 +6,7 @@ const History = () => {
   return (
     <>
       
-      <Grid container direction="column">
+      <Grid style={{marginTop:"20px"}} container direction="column">
         <Grid item container>
           <Grid item xs={false} sm={1} />
           <Grid item xs={12} sm={10}>

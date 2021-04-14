@@ -5,7 +5,7 @@ const HistoryContent = () => {
     return (
 
         <Paper elevation={3} style={{ display: "flex" }} >
-            <Grid container style={{ margin: "20px", minHeight: "500px" }}>
+            <Grid container style={{ margin: "1vh", minHeight: "500px" }}>
                 <Grid item sm={false} md={2} />
                 <Grid item align="center" sm={12} md={8} direction="column" container>
                     <Typography style={{ margin: "20px", }} variant="h4" >

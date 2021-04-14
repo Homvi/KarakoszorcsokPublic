@@ -22,18 +22,20 @@ const News = () => {
   console.log(news);
   return (
     <>
-    <Typography variant="h2" align="center" >Hírek, aktualitások</Typography>
-    <Grid container direction="column">
-      <Grid item container>
-        <Grid item xs={false} sm={2} />
-        <Grid item xs={12} sm={8} >
-        <Paper>
-          <NewsContent data={news} />
-        </Paper>
+      <Typography variant="h2" align="center">
+        Hírek, aktualitások
+      </Typography>
+      <Grid container direction="column">
+        <Grid item container>
+          <Grid item xs={false} sm={2} />
+          <Grid item xs={12} sm={8}>
+            <Paper align="center">
+              <NewsContent data={news} />
+            </Paper>
+          </Grid>
+          <Grid item xs={false} sm={2} />
         </Grid>
-        <Grid item xs={false} sm={2} />
       </Grid>
-    </Grid>
     </>
   );
 };
