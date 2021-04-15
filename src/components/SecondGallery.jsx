@@ -19,8 +19,10 @@ const useStyles = makeStyles({
   },
 });
 
-const FirstGallery = ({img}) => {
+const SecondGallery = ({img}) => {
   const classes = useStyles();
+
+
   return (
     <Grid item  container spacing={1} xs={12} style={{backgroundColor:"white"}} >
       {img.map((image, id) => (
@@ -32,4 +34,4 @@ const FirstGallery = ({img}) => {
   );
 };
 
-export default FirstGallery;
+export default SecondGallery;

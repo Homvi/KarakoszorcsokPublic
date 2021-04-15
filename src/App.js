@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <Switch>
       <Route exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/news" />
         </Route>
         <Route path="/history">
           <History />

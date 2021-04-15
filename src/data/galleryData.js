@@ -12,6 +12,9 @@ function importAll(r) {
   const smallImagesArr = importAll(
     require.context("../img/galleryContent/picsFromAroundSmall", false, /\.(png|jpe?g|svg)$/)
   );
+  const OldImagesArr = importAll(
+    require.context("../img/galleryContent/oldPictures", false, /\.(png|jpe?g|svg)$/)
+  );
   
   const imagesArrayCreator = (oldArr, newArr) => {
     for (let i = 0; i < oldArr.length; i++) {
@@ -25,9 +28,11 @@ function importAll(r) {
   };
   
   
- export const imagesBig = [];
+  export const imagesBig = [];
   export const imagesSmall = [];
+  export const OldImages = [];
   
   
   imagesArrayCreator(bigImagesArr, imagesBig);
-  imagesArrayCreator(smallImagesArr,imagesSmall );
+  imagesArrayCreator(smallImagesArr,imagesSmall);
+  imagesArrayCreator(OldImagesArr, OldImages);
