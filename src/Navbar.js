@@ -7,6 +7,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import useStyles from "./styles";
 import content from "./content"
+import karakocimer from "./img/logo/karakocimer.svg"
 
 
 const Navbar = () => {
@@ -27,7 +28,7 @@ const Navbar = () => {
             <AppBar position="static" style={{backgroundColor:"rgba(0, 0, 0, 0.8)"}} >
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
-                       <a href="/home"  style={{textDecoration:"none", color:"white"}}>Karakószörcsök</a> 
+                       <a href="/home"  style={{textDecoration:"none", color:"white", display:"flex"}}> <img style={{height:"50px"}} src={karakocimer} alt="Karakoszörcsök logo"/> </a> 
           </Typography>
                     <Button
                         color="inherit"

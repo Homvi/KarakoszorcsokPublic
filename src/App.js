@@ -1,8 +1,6 @@
 import { Route, Switch, Redirect } from "react-router";
 import React from "react";
-import useStyles from "./styles"
 import Navbar from "./Navbar"
-import content from "./content"
 import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import News from "./pages/News"
@@ -12,7 +10,6 @@ import Footer from "./components/Footer"
 
 
 function App() {
-  const classes = useStyles();
   return (
     <>
       <Navbar />
