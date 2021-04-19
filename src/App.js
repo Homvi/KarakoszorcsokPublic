@@ -1,12 +1,12 @@
 import { Route, Switch, Redirect } from "react-router";
 import React from "react";
-import Navbar from "./Navbar"
-import Contact from "./pages/Contact"
-import Home from "./pages/Home"
-import News from "./pages/News"
-import History from "./pages/History"
+import Navbar from "./Navbar";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import News from "./pages/News";
+import History from "./pages/History";
 import Gallery from "./pages/Gallery";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 
 
 function App() {
