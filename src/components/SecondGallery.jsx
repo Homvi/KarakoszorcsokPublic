@@ -2,6 +2,7 @@ import { Grid } from "@material-ui/core";
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import { useState } from "react"
+import zIndex from "@material-ui/core/styles/zIndex";
 
 const useStyles = makeStyles({
   pic: {
@@ -22,18 +23,18 @@ const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "black",
     color: "white",
-    left: 0,
     position: "fixed",
+    left: 0,
     right: 0,
     top: 0,
     bottom: 0,
-    width: "auto",
     zIndex: 40,
   },
   img: {
-    maxWidth:"100vw"
+    maxWidth: "100vw",
+    maxHeight: "80vh",
+    zIndex: 40,
   }
 });
 
@@ -44,6 +45,7 @@ const SecondGallery = ({ img }) => {
   const [clickedImageSrcOld, setClickedImageSrcOld] = useState("");
 
   const clickHandlerTwo = (e) => {
+    console.log(e.target.src);
     setModalVisibilityOld(!isModalVisibleOld)
     setClickedImageSrcOld(e.target.src);
   }
@@ -55,12 +57,12 @@ const SecondGallery = ({ img }) => {
   return (
     <Grid item container spacing={1} xs={12} style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
       {img.map((image, id) => (
-        <>
-          {isModalVisibleOld && <div onClick={clickHandlerTwo} className={classes.modal} ><img className={classes.img} src={clickedImageSrcOld} alt={image.original} /></div>}
-        <Grid key={id} xs={6} md={2} item container>
+
+        <Grid key={image.original} xs={6} md={2} item container>
+          {isModalVisibleOld && <div key={`${image.original}1`} onClick={clickHandlerTwo} className={classes.modal} ><img className={classes.img} src={clickedImageSrcOld} alt={image.original} /></div>}
           <img className={classes.pic} onClick={e => clickHandlerTwo(e)} src={image.original} alt={image.original} />
         </Grid>
-        </>
+
       ))}
     </Grid>
   );

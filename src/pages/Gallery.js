@@ -4,6 +4,8 @@ import FirstGallery from "../components/FirstGallery";
 import SecondGallery from "../components/SecondGallery";
 import { OldImages, imagesBig } from "../data/galleryData";
 
+
+console.log(OldImages);
 const Gallery = () => {
   return (
     <Grid
