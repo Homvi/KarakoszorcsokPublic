@@ -2,7 +2,7 @@ import { Grid } from "@material-ui/core";
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import { useState } from "react"
-import zIndex from "@material-ui/core/styles/zIndex";
+
 
 const useStyles = makeStyles({
   pic: {
