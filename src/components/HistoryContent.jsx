@@ -7,7 +7,7 @@ const HistoryContent = () => {
         <Paper elevation={3} style={{ display: "flex", marginBottom:"20px" }} >
             <Grid container style={{ margin: "1vh", minHeight: "500px" }}>
                 <Grid item sm={false} md={2} />
-                <Grid item align="center" sm={12} md={8} direction="column" container>
+                <Grid item align="center" sm={12} md={8} style={{maxWidth:"97vw"}} direction="column" container>
                     <Typography style={{ margin: "20px", }} variant="h4" >
                         Karakó-Szörcsök község polgári történelme
                 </Typography>
