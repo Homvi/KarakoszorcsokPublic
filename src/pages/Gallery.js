@@ -3,6 +3,7 @@ import React from "react";
 import FirstGallery from "../components/FirstGallery";
 import SecondGallery from "../components/SecondGallery";
 import { OldImages, imagesBig } from "../data/galleryData";
+import { Helmet } from "react-helmet";
 
 
 const Gallery = () => {
@@ -16,6 +17,13 @@ const Gallery = () => {
       container
       direction="column"
     >
+       <Helmet>
+        <title>Galéria</title>
+        <meta
+          name="description"
+          content="Képek Szabó Rezső Tibor gyűjtése, Képek Veszprém megyéből. "
+        />
+      </Helmet>
       {/* Karakószörcsök 1960-ig. */}
       <Grid item container>
         <Grid item xs={false} md={2} />
