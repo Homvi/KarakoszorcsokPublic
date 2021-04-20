@@ -1,7 +1,7 @@
 import { Grid } from "@material-ui/core";
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import { useState } from "react"
+import { useState } from "react";
 
 
 const useStyles = makeStyles({
@@ -12,6 +12,7 @@ const useStyles = makeStyles({
     width: "100%",
     opacity: 0.8,
     filter: "grayscale(10%)",
+    backgroundColor: "black",
 
     '&:hover': {
       opacity: 1,
@@ -35,6 +36,7 @@ const useStyles = makeStyles({
     maxWidth: "100vw",
     maxHeight: "80vh",
     zIndex: 40,
+
   }
 });
 

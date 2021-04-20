@@ -10,7 +10,7 @@ import { Typography } from "@material-ui/core";
 
 const News = () => {
   return (
-    <div style={{minHeight:"calc(100vh - 70px)", marginBottom:"30px"}}>
+    <div style={{minHeight:"calc(100vh - 70px)", backgroundImage: "repeating-linear-gradient(284deg, transparent 0px, transparent 1px,rgb(251,251,251) 1px, rgb(251,251,251) 3px),repeating-linear-gradient(14deg, transparent 0px, transparent 1px,rgb(251,251,251) 1px, rgb(251,251,251) 3px),linear-gradient(90deg, rgb(222,222,222),rgb(222,222,222))", marginBottom:"30px"}}>
       <Typography variant="h2" align="center">
         Hírek, aktualitások
       </Typography>

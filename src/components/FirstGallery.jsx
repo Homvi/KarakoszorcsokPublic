@@ -11,11 +11,13 @@ const useStyles = makeStyles({
     width: "100%",
     opacity: 0.8,
     filter: "grayscale(10%)",
+    backgroundColor:"black",
 
     '&:hover': {
       opacity: 1,
       transition: "0.3s",
       filter: "grayscale(0%)",
+      
     },
   },
   modal: {
