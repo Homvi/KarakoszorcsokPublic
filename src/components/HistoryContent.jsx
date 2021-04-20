@@ -4,11 +4,11 @@ import React from 'react'
 const HistoryContent = () => {
     return (
 
-        <Paper elevation={3} style={{ display: "flex", marginBottom:"20px" }} >
+        <Paper elevation={3} style={{ display: "flex", marginBottom: "20px" }} >
             <Grid container style={{ margin: "1vh", minHeight: "500px" }}>
-                <Grid item sm={false} md={2} />
-                <Grid item align="center" sm={12} md={8} style={{maxWidth:"97vw"}} direction="column" container>
-                    <Typography style={{ margin: "20px", }} variant="h4" >
+                <Grid item xs={1} md={2} />
+                <Grid item align="center" xs={10} md={8} style={{ maxWidth: "97vw" }} direction="column" container>
+                    <Typography style={{ margin: "20px", textDecoration:"underline" }} variant="h5" >
                         Karakó-Szörcsök község polgári történelme
                 </Typography>
                     <Typography variant="body1" align="center">Bevezetésül egy régi okmány
@@ -691,7 +691,7 @@ hiteles másolatát pedig a karakószörcsöki nemes Deés család bírja.</Typo
                         födözésére fordítják, faiskolájuk szépen tenyészik .Összesen 183-an vannak.
 </Typography>
                 </Grid>
-                <Grid item sm={false} md={2} />
+                <Grid item xs={1} md={2} />
             </Grid>
         </Paper>
     )
