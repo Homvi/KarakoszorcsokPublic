@@ -25,6 +25,13 @@ const content = {
       desc: "Dokumentumtár",
       href:
         "https://www.tuskevarikozoshivatal.hu/?module=news&fname=dok-karakoszorcsok",
+      newTab:true,
+    },
+    {
+      desc: "Látnivalók Karakószörcsök és környékén",
+      href:
+        "https://karakoszorcsok.kornyeke.hu/latnivalok-programok",
+      newTab:true,
     },
   ],
 };

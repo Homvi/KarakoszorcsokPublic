@@ -6,53 +6,76 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import useStyles from "./styles";
-import content from "./content"
-import karakocimer from "./img/logo/karakocimer.svg"
-
+import content from "./content";
+import karakocimer from "./img/logo/karakocimer.svg";
 
 const Navbar = () => {
-    const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = React.useState(null);
 
-    const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
-    };
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
 
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
-    const classes = useStyles();
+  const classes = useStyles();
 
-    return (
-        <div className={classes.root}>
-            <AppBar position="static" style={{backgroundColor:"rgba(0, 0, 0, 0.8)"}} >
-                <Toolbar>
-                    <Typography variant="h6" className={classes.title}>
-                       <a href="/home"  style={{textDecoration:"none", color:"white", display:"flex"}}> <img style={{height:"50px"}} src={karakocimer} alt="Karakoszörcsök logo"/> </a> 
+  return (
+    <div className={classes.root}>
+      <AppBar
+        position="static"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
+      >
+        <Toolbar>
+          <Typography variant="h6" className={classes.title}>
+            <a
+              href="/home"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                display: "flex",
+              }}
+            >
+              {" "}
+              <img
+                style={{ height: "50px" }}
+                src={karakocimer}
+                alt="Karakoszörcsök logo"
+              />{" "}
+            </a>
           </Typography>
-                    <Button
-                        color="inherit"
-                        aria-controls="simple-menu"
-                        aria-haspopup="true"
-                        onClick={handleClick}
-                    >
-                        Menü
+          <Button
+            color="inherit"
+            aria-controls="simple-menu"
+            aria-haspopup="true"
+            onClick={handleClick}
+          >
+            Menü
           </Button>
-                    <Menu
-                        id="simple-menu"
-                        anchorEl={anchorEl}
-                        keepMounted
-                        open={Boolean(anchorEl)}
-                        onClose={handleClose} >
-                            <a  className={classes.anchorBold} href="/home"><MenuItem style={{ fontWeight:"bold" }} onClick={handleClose} >Főoldal</MenuItem></a>
-                        {content.menuItems.map((item, index) => (
-                            <a className={classes.anchor} key={index} href={item.href}><MenuItem onClick={handleClose} >{item.desc}</MenuItem></a>
-                        ))}
-                    </Menu>
-                </Toolbar>
-            </AppBar>
-        </div>
-    );
+          <Menu
+            id="simple-menu"
+            anchorEl={anchorEl}
+            keepMounted
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+          >
+            <a className={classes.anchorBold} href="/home">
+              <MenuItem style={{ fontWeight: "bold" }} onClick={handleClose}>
+                Főoldal
+              </MenuItem>
+            </a>
+            {content.menuItems.map((item, index) => (
+              <a className={classes.anchor} key={index} href={item.href}>
+                <MenuItem onClick={handleClose}>{item.desc}</MenuItem>
+              </a>
+            ))}
+          </Menu>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
 };
 
 export default Navbar;
