@@ -13,8 +13,7 @@ const Welcome = () => {
           Községünk Magyarország Dunántúli részén, a Bakony alján, Veszprém megyében a Somló és a Ság hegy között bújik meg. A falu fekvése, jó levegője, csöndes hangulata ideális a pihenni és kikapcsolódásra vágyóknak, a munkából hazatérőknek és a helyben lakóknak egyaránt.
           Arra törekszünk, hogy honlapunk minden fontos, hasznos helyi információt tartalmazzon, és remélem, hogy ezeknek Önök is hasznát veszik.<br />
           Remélem, a honlap böngészése után kedvet érez majd, hogy személyesen is megismerkedjen településünkkel és az itt élő emberekkel!
-      </p>
-
+                    </p>
                     <Typography style={{ margin: "20px" }} >
                         Üdvözlettel:<br /> Honvédő Szandra  <br /> Karakószörcsök község polgármestere
 </Typography>
